@@ -1,6 +1,7 @@
 const pastas = ["Fideos", "Ñoquis", "Ravioles", "Sorrentinos"];
 const precios = [4000, 4400, 7500, 8000];
 
+
 let continuar = true;
 
 while (continuar) {
@@ -31,5 +32,14 @@ while (continuar) {
             break;
         default:
             alert("Selecciona una opcion que sea correcta")
+    }
+
+
+    if (continuar) {
+        let seguir = prompt("Quiere algo más?  si/no");
+        if (seguir === "no") {
+            continuar = false;
+            alert("Gracias por su compra")
+        }
     }
 }
